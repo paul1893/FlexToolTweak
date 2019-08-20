@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>entry</key>
+	<dict>
+		<key>cell</key>
+		<string>PSLinkCell</string>
+		<key>icon</key>
+		<string>/Library/PreferenceLoader/Preferences/FlexTool.png</string>
+		<key>bundle</key>
+		<string>AppList</string>
+		<key>isController</key>
+		<string>1</string>
+		<key>label</key>
+		<string>FlexTool</string>
+		<key>ALSettingsDefaultValue</key>
+		<string>0</string>
+		<key>ALSettingsPath</key>
+		<string>/var/mobile/Library/Preferences/com.pba.FlexTool.plist</string>
+		<key>ALSettingsKeyPrefix</key>
+		<string>FlexToolEnabled-</string>
+		<key>ALChangeNotification</key>
+		<string>com.pba.flextool.settingschanged</string>
+		<key>ALAllowsSelection</key>
+		<string>1</string>
+		<key>ALSectionDescriptors</key>
+		<array>
+			<dict>
+				<key>items</key>
+				<array>
+					<dict>
+						<key>cell-class-name</key>
+						<string>ALSwitchCell</string>
+						<key>ALSingleEnabledMode</key>
+						<true/>
+						<key>ALSettingsDefaultValue</key>
+						<string>0</string>
+						<key>ALSettingsKey</key>
+						<string>FlexToolEnabled-com.apple.springboard</string>
+						<key>ALChangeNotification</key>
+						<string>com.pba.flextool.springboardsettingschanged</string>
+						<key>ALAllowsSelection</key>
+						<string>1</string>
+						<key>text</key>
+						<string>Springboard</string>
+					</dict>
+				</array>
+				<key>footer-title</key>
+				<string>A respring may be necessary to show the menu on the springboard</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>System Applications</string>
+				<key>predicate</key>
+				<string>isSystemApplication = TRUE</string>
+				<key>cell-class-name</key>
+				<string>ALSwitchCell</string>
+				<key>icon-size</key>
+				<string>29</string>
+				<key>suppress-hidden-apps</key>
+				<string>1</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>User Applications</string>
+				<key>predicate</key>
+				<string>isSystemApplication = FALSE</string>
+				<key>cell-class-name</key>
+				<string>ALSwitchCell</string>
+				<key>icon-size</key>
+				<string>29</string>
+				<key>suppress-hidden-apps</key>
+				<string>1</string>
+				<key>footer-title</key>
+				<string>© 2019 Paul Bancarel | © 2019 Flipboard/Flex</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>
